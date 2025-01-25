@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Source Code Pro';
+    box-sizing: border-box;
+    color: #313131;
+    background: #ffffff;
+  }
+
+  :root {
+    --primary-color: #605DC8;
+    --secondary-color: #8B89E6;
+    --accent-color: #e8e7fa;
+    --shadow-color: #E8E8E8;
+    --pink-coloe: #fb6f92;
+  }
+  
+  button.primary {
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+  }
