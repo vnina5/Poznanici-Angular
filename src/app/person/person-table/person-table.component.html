@@ -1,0 +1,30 @@
+<table class="table">
+    <thead class="table-head">
+        <tr>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>JMBG</th>
+            <th>Date of birth</th>
+            <th>Age in month</th>
+            <th>Height</th>
+            <th>City of birth</th>
+            <th>City of residence</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody class="table-body">
+        <tr *ngFor="let person of persons">
+            <td>{{ person.id }}</td>
+            <td>{{ person.firstName }}</td>
+            <td>{{ person.lastName }}</td>
+            <td>{{ person.JMBG }}</td>
+            <td>{{ person.dateOfBirth }}</td>
+            <td>{{ person.ageInMonths }}</td>
+            <td>{{ person.height }}</td>
+            <td>{{ person.cityOfBirth }}</td>
+            <td>{{ person.cityOfResidence }}</td>
+            <td>{{ person.address }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { PersonTableComponent } from "./person-table/person-table.component";
 
 @Component({
   selector: 'app-person',
-  imports: [RouterModule],
+  imports: [RouterModule, PersonTableComponent],
   template: `
     <!-- <div class="navbar-person">
       <a routerLink='/list' class="nav-item nav-link">List</a>
@@ -15,7 +16,7 @@ import { RouterModule } from '@angular/router';
     <h1>
       person works!
     </h1>
-    
+    <app-person-table></app-person-table>
     <section class="content">
       <!-- <router-outlet></router-outlet> -->
     </section>
